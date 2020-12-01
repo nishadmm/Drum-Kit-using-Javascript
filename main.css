@@ -7,10 +7,24 @@ body {
 }
 
 /* background video */
-#bg-video {
+.video-container {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 98%;
+  overflow: hidden;
+  background: url(images/cover.jpg) no-repeat center center/cover;
+}
+
+#bg-video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 /* Drum Kit */
@@ -146,7 +160,7 @@ body {
   position: absolute;
   top: 2rem;
   left: 1rem;
-  height: 700px;
+  height: 680px;
   width: 300px;
   background-color: #000000;
   color: #ffffff;
@@ -181,7 +195,7 @@ body {
 footer {
   position: absolute;
   left: 0;
-  bottom: -15px;
+  bottom: 0px;
   width: 100%;
   text-align: center;
   background-color: #b8b8b8;
