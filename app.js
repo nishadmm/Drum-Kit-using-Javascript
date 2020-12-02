@@ -69,7 +69,7 @@ crashRide.addEventListener('transitionend', removeAnimateCrashRide);
 hiHatTop.addEventListener('transitionend', removeAnimateHiHapTop);
 
 // Window Listner
-window.addEventListener('keydown', playAudio);
+window.addEventListener('click', playAudio);
 // Bg-video playing listner
 document.addEventListener('DOMContentLoaded', function () {
   const bgAudio = document.getElementById('bg-audio');
